@@ -13,7 +13,8 @@
 #include <string>
 #include "fmt/core.h"
 
-int puzzle_sample(std::string base_file_path);
+int puzzle_sample_1(std::string base_file_path);
+int puzzle_sample_2(std::string base_file_path);
 int puzzle_1(std::string base_file_path);
 int puzzle_2(std::string base_file_path);
 
