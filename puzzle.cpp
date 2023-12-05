@@ -17,13 +17,7 @@ int puzzle_sample_1(std::string base_file_path) {
         return 0;
     }
 
-    std::string line;
-
-    while (std::getline(file, line)) {
-        fmt::println("{}", line);
-    }
-
-    return 0;
+    return do_puzzle_1(file);
 }
 
 int puzzle_sample_2(std::string base_file_path) {
@@ -39,13 +33,7 @@ int puzzle_sample_2(std::string base_file_path) {
         return 0;
     }
 
-    std::string line;
-
-    while (std::getline(file, line)) {
-        fmt::println("{}", line);
-    }
-
-    return 0;
+    return do_puzzle_1(file);
 }
 
 int puzzle_1(std::string base_file_path) {
@@ -61,13 +49,7 @@ int puzzle_1(std::string base_file_path) {
         return 0;
     }
 
-    std::string line;
-
-    while (std::getline(file, line)) {
-        fmt::println("{}", line);
-    }
-
-    return 0;
+    return do_puzzle_1(file);
 }
 
 int puzzle_2(std::string base_file_path) {
@@ -83,6 +65,20 @@ int puzzle_2(std::string base_file_path) {
         return 0;
     }
 
+    return do_puzzle_1(file);
+}
+
+int do_puzzle_1(std::ifstream &file) {
+    std::string line;
+
+    while (std::getline(file, line)) {
+        fmt::println("{}", line);
+    }
+
+    return 0;
+}
+
+int do_puzzle_2(std::ifstream &file) {
     std::string line;
 
     while (std::getline(file, line)) {
