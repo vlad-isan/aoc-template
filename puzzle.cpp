@@ -33,7 +33,7 @@ int puzzle_sample_2(const std::string &base_file_path) {
         return 0;
     }
 
-    return do_puzzle_1(file);
+    return do_puzzle_2(file);
 }
 
 int puzzle_1(const std::string &base_file_path) {
@@ -65,7 +65,7 @@ int puzzle_2(const std::string &base_file_path) {
         return 0;
     }
 
-    return do_puzzle_1(file);
+    return do_puzzle_2(file);
 }
 
 int do_puzzle_1(std::ifstream &file) {
