@@ -33,6 +33,6 @@ TEST(AOC, PUZZLE_1) {
 }
 
 TEST(AOC, PUZZLE_2) {
-    EXPECT_EQ(puzzle_1(get_base_file_path()), 0);
+    EXPECT_EQ(puzzle_2(get_base_file_path()), 0);
 }
 
