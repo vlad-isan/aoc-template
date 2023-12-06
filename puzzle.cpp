@@ -4,7 +4,7 @@
 
 #include "puzzle.h"
 
-int puzzle_sample_1(std::string base_file_path) {
+int puzzle_sample_1(const std::string &base_file_path) {
     std::string file_path = fmt::format("{}/{}", base_file_path, "puzzle-input-sample-1.txt");
 
     std::ifstream file(file_path);
@@ -20,7 +20,7 @@ int puzzle_sample_1(std::string base_file_path) {
     return do_puzzle_1(file);
 }
 
-int puzzle_sample_2(std::string base_file_path) {
+int puzzle_sample_2(const std::string &base_file_path) {
     std::string file_path = fmt::format("{}/{}", base_file_path, "puzzle-input-sample-2.txt");
 
     std::ifstream file(file_path);
@@ -36,7 +36,7 @@ int puzzle_sample_2(std::string base_file_path) {
     return do_puzzle_1(file);
 }
 
-int puzzle_1(std::string base_file_path) {
+int puzzle_1(const std::string &base_file_path) {
     std::string file_path = fmt::format("{}/{}", base_file_path, "puzzle-input-1.txt");
 
     std::ifstream file(file_path);
@@ -52,7 +52,7 @@ int puzzle_1(std::string base_file_path) {
     return do_puzzle_1(file);
 }
 
-int puzzle_2(std::string base_file_path) {
+int puzzle_2(const std::string &base_file_path) {
     std::string file_path = fmt::format("{}/{}", base_file_path, "puzzle-input-2.txt");
 
     std::ifstream file(file_path);
