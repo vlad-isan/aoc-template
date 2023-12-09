@@ -6,11 +6,17 @@
 #define PUZZLE_H
 
 #include <algorithm>
+#include <array>
 #include <cctype>
 #include <fstream>
 #include <iostream>
+#include <map>
 #include <ranges>
 #include <string>
+#include <sstream>
+#include <unordered_map>
+#include <vector>
+
 #include "fmt/core.h"
 
 int puzzle_sample_1(const std::string &base_file_path);
